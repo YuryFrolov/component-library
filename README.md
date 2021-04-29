@@ -1,4 +1,4 @@
 # component-library
 
 ## 1. Columns flexbox
-![Columns flexbox](1. Columns Flexbox/columns-flexbox.png)
+![Columns flexbox](https://raw.githubusercontent.com/YuryFrolov/component-library/main/1.%20Columns%20Flexbox/columns-flexbox.PNG)
