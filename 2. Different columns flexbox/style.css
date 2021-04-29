@@ -1,0 +1,133 @@
+@charset "UTF-8";
+body {
+  background-color: #f9fafb;
+}
+
+.pricing {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.pricing__list {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .pricing__list {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.pricing___item {
+  position: relative;
+  border: 1px solid #d0d0d2;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  max-width: 360px;
+}
+.pricing___item:hover {
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.pricing__item-sale {
+  padding: 12px;
+  border-bottom: 1px solid #d0d0d2;
+}
+
+.pricing__item-sale-text {
+  font-size: 18px;
+  text-align: center;
+}
+.pricing__item-sale-text > span {
+  font-weight: 700;
+  color: #e22729;
+}
+
+.pricing__item-inner-wrapper {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .pricing__item-inner-wrapper:last-of-type {
+    min-height: 380px;
+  }
+}
+
+.pricing__img {
+  align-self: center;
+  object-fit: contain;
+  max-height: 150px;
+  margin-bottom: 30px;
+}
+
+.pricing__plan {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.pricing__plan-description {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.pricing__price {
+  font-size: 22px;
+}
+.pricing__price > abbr {
+  font-size: 18px;
+  color: #a7a6a9;
+}
+
+.pricing__button {
+  background-color: #fff;
+  padding: 18px;
+  border: 1px solid #3041C4;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+.pricing__button > span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3041C4;
+}
+.pricing__button:hover {
+  background-color: #3041C4;
+}
+.pricing__button:hover span {
+  color: #fff;
+}
+
+.pricing__separator {
+  height: 1px;
+  background-color: #d0d0d2;
+}
+
+@media screen and (min-width: 1000px) {
+  .pricing__features-list {
+    min-height: 300px;
+  }
+}
+
+.pricing__features-item {
+  font-size: 18px;
+}
+.pricing__features-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.pricing__features-item:before {
+  content: "✅";
+  margin-right: 10px;
+}
