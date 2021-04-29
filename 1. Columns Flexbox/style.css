@@ -1,0 +1,138 @@
+@charset "UTF-8";
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+* {
+  color: #616161;
+}
+
+.pricing {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.pricing__list {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .pricing__list {
+    flex-direction: row;
+  }
+}
+
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 1.875em;
+  /*     &--the-best {
+
+      } */
+}
+.pricing__item:hover {
+  border-color: #ff8364;
+}
+.pricing__item:hover * {
+  transition: 0.1s ease;
+}
+
+.pricing__header {
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 20px;
+  margin-bottom: 19px;
+}
+
+.pricing__plan-wrapper {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing__plan {
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.pricing__price {
+  font-size: 3em;
+  font-weight: 700;
+  color: #141414;
+}
+
+.pricing__image {
+  object-fit: contain;
+}
+
+.pricing__features-title {
+  font-weight: 700;
+  color: #141414;
+  margin-bottom: 15px;
+}
+
+.features__list {
+  margin-bottom: 30px;
+}
+
+.features__item {
+  margin-bottom: 10px;
+}
+.features__item:last-child {
+  margin-bottom: 0;
+}
+.features__item:before {
+  content: "✅";
+}
+
+.pricing__button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 9px 15px;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.pricing__button:hover {
+  background-color: #ff8364;
+}
+.pricing__button:hover p {
+  color: #fff;
+}
+
+.pricing__button p {
+  color: #141414;
+}
+
+.pricing__small-text {
+  font-size: 0.75em;
+}
+
+.description {
+  padding: 20px 40px;
+  font-family: "Consolas", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+.description li:not(:last-child) {
+  list-style-type: decimal;
+  margin-bottom: 15px;
+}

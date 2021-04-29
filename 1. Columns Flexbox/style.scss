@@ -1,0 +1,157 @@
+// font - IBM Plex Sans| Regular400 Medium500 Bold700
+
+// Обнуление стилей - нужно поместить в global
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+}
+///////////////////////////
+// Отдельные свойства для шрифтов и цветов
+* {
+    color: #616161;
+}
+////////////КОПИРУЙ ОТ///////////////
+.pricing {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.pricing__container {
+    
+}
+
+.pricing__list {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 600px) {
+        flex-direction: row;
+    }
+}
+
+.pricing__item {
+    display: flex;// позволяет задать кнопке автоматический марджин
+    flex-direction: column;
+
+    max-width: 350px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 1.875em;
+    
+    &:hover {
+        border-color: #ff8364;
+    }
+    
+    &:hover * {
+        transition: 0.1s ease;
+    }
+
+/*     &--the-best {
+        
+    } */
+}
+
+.pricing__header {
+    display: flex;
+
+    border-bottom: 1px solid #e6e6e6;
+
+    padding-bottom: 20px;
+    margin-bottom: 19px;
+}
+
+.pricing__plan-wrapper {
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pricing__plan {
+    text-transform: uppercase;
+    color: #141414;
+}
+
+.pricing__price {
+    font-size: 3em;
+    font-weight: 700;
+    color: #141414;
+}
+
+.pricing__image {
+    object-fit: contain;
+}
+
+.pricing__features-title {
+    font-weight: 700;
+    color: #141414;
+
+    margin-bottom: 15px;
+}
+
+.features__list {
+    margin-bottom: 30px;
+}
+
+.features__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &:before {
+        content: '✅';
+    }
+}
+
+.pricing__button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 9px 15px;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+        background-color: #ff8364;
+    }
+
+    &:hover p {
+        color: #fff;
+    }
+}
+
+.pricing__button p {
+    color: #141414;
+}
+
+.pricing__small-text {
+    font-size: 0.75em;
+}
+//////////КОПИРУЙ ДО/////////////////////
+.description {
+    padding: 20px 40px;
+    font-family: 'Consolas', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    max-width: 600px;
+
+    & li:not(:last-child) {
+        list-style-type: decimal;
+        margin-bottom: 15px;
+    }
+}
