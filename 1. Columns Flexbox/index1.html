@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="pricing">
+      <h2 class="pricing__title">Колонки ОДИНАКОВОЙ высоты</h2>
+      <p class="pricing__description">I can change any and everything in my life by simply changing myself.</p>
+      <div class="pricing__container container">
+        <ul class="pricing__list">
+          <li class="pricing__item">
+            <header class="pricing__header">
+              <div class="pricing__plan-wrapper">
+                <h3 class="pricing__plan">Demo</h3><span class="pricing__price">Free</span>
+              </div><img class="pricing__image" src="img/1. Columns flexbox/80px.jpg" alt="">
+            </header>
+            <ul class="pricing__features-list">
+              <li class="pricing__features-item">Long Feature One</li>
+              <li class="pricing__features-item">Feature Two</li>
+              <li class="pricing__features-item">Long Feature Three</li>
+            </ul>
+            <button class="pricing__button">
+              <p>Button</p>
+            </button>
+            <p class="pricing__small-text">My life by simply changing myself. This puts me in the driving seat of my life and makes</p>
+          </li>
+          <li class="pricing__item">
+            <header class="pricing__header">
+              <div class="pricing__plan-wrapper">
+                <h3 class="pricing__plan">Medium</h3><span class="pricing__price">$30</span>
+              </div><img class="pricing__image" src="img/1. Columns flexbox/80px.jpg" alt="">
+            </header>
+            <ul class="pricing__features-list">
+              <li class="pricing__features-item">Long Feature One</li>
+              <li class="pricing__features-item">Feature Two</li>
+              <li class="pricing__features-item">Long Feature Three</li>
+              <li class="pricing__features-item">Feature Four</li>
+            </ul>
+            <button class="pricing__button">
+              <p>Button</p>
+            </button>
+            <p class="pricing__small-text">My life by simply changing myself. This puts me in the driving seat of my life and makes</p>
+          </li>
+          <li class="pricing__item">
+            <header class="pricing__header">
+              <div class="pricing__plan-wrapper">
+                <h3 class="pricing__plan">Full</h3><span class="pricing__price">$58</span>
+              </div><img class="pricing__image" src="img/1. Columns flexbox/80px.jpg" alt="">
+            </header>
+            <ul class="pricing__features-list">
+              <li class="pricing__features-item">Long Feature One</li>
+              <li class="pricing__features-item">Feature Two</li>
+              <li class="pricing__features-item">Long Feature Three</li>
+              <li class="pricing__features-item">Feature Four</li>
+              <li class="pricing__features-item">Feature Five</li>
+            </ul>
+            <button class="pricing__button">
+              <p>Button</p>
+            </button>
+            <p class="pricing__small-text">My life by simply changing myself. This puts me in the driving seat of my life and makes</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <ol class="description">
+      <li>Одинаковая высота pricing__item достигается за счёт того, что у pricing__container d:flex, а у флекс-контейнера ai:stretch по умолчанию.</li>
+      <li>У pricing__item есть минимальная высота, что позволяет блоку "выглядеть" при недостатке контента.</li>
+      <li>У кнопки есть отступ сверху. При увеличении количества буллитов они не наедут на кнопку. + за счёт ai:stretch размер айтемов с меньшим количеством буллитов будут подстраиваться под высоту айтема с самым большим количеством буллитов.</li>
+    </ol>
+    <ol class="description">
+      <li>Если нужны элементы лесенкой, ставь ai:flex-end у pricing__list</li>
+      <li>Если нужен один большой элемент, а все другие меньше - выровняй элементы по краю с помошью ai, а нужному сделай модификатор размеров</li>
+      <li>Если при этом нужно чтобы они были выровнены по центру - помимо модификатора для самого большого нужно задать минимальную всем остальным так, чтобы выглядели одинаково.</li>
+    </ol>
+  </body>
+</html>

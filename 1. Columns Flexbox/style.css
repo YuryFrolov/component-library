@@ -19,6 +19,18 @@ img {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+.pricing__title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pricing__description {
+  font-size: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 .pricing__list {
   display: flex;
   flex-direction: column;
@@ -76,23 +88,23 @@ img {
   object-fit: contain;
 }
 
-.pricing__features-title {
-  font-weight: 700;
-  color: #141414;
-  margin-bottom: 15px;
-}
+/* .pricing__features-title {
+    font-weight: 700;
+    color: #141414;
 
-.features__list {
+    margin-bottom: 15px;
+} */
+.pricing__features-list {
   margin-bottom: 30px;
 }
 
-.features__item {
+.pricing__features-item {
   margin-bottom: 10px;
 }
-.features__item:last-child {
+.pricing__features-item:last-child {
   margin-bottom: 0;
 }
-.features__item:before {
+.pricing__features-item:before {
   content: "✅";
 }
 
