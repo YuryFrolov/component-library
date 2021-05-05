@@ -7,4 +7,4 @@
 ![Different columns flexbox](https://raw.githubusercontent.com/YuryFrolov/component-library/main/2.%20Different%20columns%20flexbox/different-columns-flexbox.png)
 
 ## 3. Different columns flexbox-2
-![Different columns flexbox](https://raw.githubusercontent.com/YuryFrolov/component-library/main/2.%20Different%20columns%20flexbox-2/different-columns-flexbox-2.png)
+![Different columns flexbox](https://raw.githubusercontent.com/YuryFrolov/component-library/main/3.%20Different%20columns%20flexbox-2/different-columns-flexbox-2.PNG)
