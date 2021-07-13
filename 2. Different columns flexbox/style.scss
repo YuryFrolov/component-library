@@ -151,7 +151,7 @@ h2 {
     }
 
     &:before {
-        content: '✅';
+        content: url('img/check.svg');
         margin-right: 10px;
     }
 }

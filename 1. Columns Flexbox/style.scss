@@ -113,13 +113,16 @@ img {
 
 .pricing__features-item {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 
     &:last-child {
         margin-bottom: 0;
     }
     
     &:before {
-        content: '✅';
+        content: url('star.svg');
+        margin-right: 5px;
     }
 }
 
