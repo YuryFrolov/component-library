@@ -14,4 +14,4 @@
 
 ## 4. Custom radiobuttons (for Denim)
 
-![Different columns flexbox](<https://raw.githubusercontent.com/YuryFrolov/component-library/main/4.%20Custom%20radiobuttons%20%28for%20Denim%29/custom-radiobuttons (for Denim).PNG>)
+![Different columns flexbox](<https://raw.githubusercontent.com/yuri-frolov/component-library/main/4.%20Custom%20radiobuttons%20(for%20Denim)/custom-radiobuttons%20(for%20Denim).PNG>)
