@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;   
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    padding: 1em;
+}
+
+$blue-kraiola: #B0C3C7;
+$blue: #3B6392;
+$pale-blue: #BFC3C8;
+
+@mixin visually-hidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.check__label {
+    padding-left: 1.3em;
+}
+
+.check__input-radio {
+    @include visually-hidden();
+    &:checked + .check__radio[id=blue-kraiola]:before {
+        border: 1px solid $blue-kraiola;
+    }
+
+    &:checked + .check__radio[id=blue]:before {
+        border: 1px solid $blue;
+    }
+
+    &:checked + .check__radio[id=pale-blue]:before {
+        border: 1px solid $pale-blue;
+    }
+
+    &:disabled + .check__radio {
+        cursor: default;
+    }
+}
+
+.check__input-radio + .check__radio {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    margin-left: -1.3em;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: transparent;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    
+    &[id=blue-kraiola] {
+        $color: $blue-kraiola;
+        background-color: $color;
+        &:hover:before {
+            border: 1px solid $color;
+        }
+    }
+
+    &[id=blue] {
+        $color: $blue;
+        background-color: $color;
+        &:hover:before {
+            border: 1px solid $color;
+        }
+    }
+
+    &[id=pale-blue] {
+        $color: $pale-blue;
+        background-color: $color;
+        &:hover:before {
+            border: 1px solid $color;
+        }
+    }
+}
+/////////////////
+.check__input-radio-letter {
+    @include visually-hidden();   
+}
+
+.check__input-radio-letter + .check__radio {
+    text-transform: uppercase;
+    color: #727A82;
+}
+
+.check__input-radio-letter:hover + .check__radio,
+.check__input-radio-letter:checked + .check__radio {
+    color: #000;
+    cursor: pointer;
+}
+
+.check__input-radio-letter:disabled + .check__radio {
+    cursor: default;
+}
+////////////////////

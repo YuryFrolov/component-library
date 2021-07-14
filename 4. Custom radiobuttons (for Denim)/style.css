@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  padding: 1em;
+}
+
+.check__label {
+  padding-left: 1.3em;
+}
+
+.check__input-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.check__input-radio:checked + .check__radio[id=blue-kraiola]:before {
+  border: 1px solid #B0C3C7;
+}
+.check__input-radio:checked + .check__radio[id=blue]:before {
+  border: 1px solid #3B6392;
+}
+.check__input-radio:checked + .check__radio[id=pale-blue]:before {
+  border: 1px solid #BFC3C8;
+}
+.check__input-radio:disabled + .check__radio {
+  cursor: default;
+}
+
+.check__input-radio + .check__radio {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -1.3em;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.check__input-radio + .check__radio:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: -1;
+}
+.check__input-radio + .check__radio[id=blue-kraiola] {
+  background-color: #B0C3C7;
+}
+.check__input-radio + .check__radio[id=blue-kraiola]:hover:before {
+  border: 1px solid #B0C3C7;
+}
+.check__input-radio + .check__radio[id=blue] {
+  background-color: #3B6392;
+}
+.check__input-radio + .check__radio[id=blue]:hover:before {
+  border: 1px solid #3B6392;
+}
+.check__input-radio + .check__radio[id=pale-blue] {
+  background-color: #BFC3C8;
+}
+.check__input-radio + .check__radio[id=pale-blue]:hover:before {
+  border: 1px solid #BFC3C8;
+}
+
+.check__input-radio-letter {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.check__input-radio-letter + .check__radio {
+  text-transform: uppercase;
+  color: #727A82;
+}
+
+.check__input-radio-letter:hover + .check__radio,
+.check__input-radio-letter:checked + .check__radio {
+  color: #000;
+  cursor: pointer;
+}
+
+.check__input-radio-letter:disabled + .check__radio {
+  cursor: default;
+}

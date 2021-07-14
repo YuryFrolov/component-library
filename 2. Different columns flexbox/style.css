@@ -3,7 +3,7 @@ body {
 }
 
 .pricing {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
 
@@ -12,13 +12,24 @@ h2 {
 }
 
 .pricing__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 @media screen and (min-width: 1000px) {
   .pricing__list {
-    flex-direction: row;
-    align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -26,9 +37,11 @@ h2 {
   position: relative;
   border: 1px solid #d0d0d2;
   border-radius: 8px;
+  -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   max-width: 360px;
 }
+
 .pricing___item:hover {
   border: 1px solid #fff;
   background-color: #fff;
@@ -43,6 +56,7 @@ h2 {
   font-size: 18px;
   text-align: center;
 }
+
 .pricing__item-sale-text > span {
   font-weight: 700;
   color: #e22729;
@@ -50,9 +64,15 @@ h2 {
 
 .pricing__item-inner-wrapper {
   padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 @media screen and (min-width: 1000px) {
   .pricing__item-inner-wrapper:last-of-type {
     min-height: 380px;
@@ -60,8 +80,11 @@ h2 {
 }
 
 .pricing__img {
-  align-self: center;
-  object-fit: contain;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -o-object-fit: contain;
+     object-fit: contain;
   max-height: 150px;
   margin-bottom: 30px;
 }
@@ -80,6 +103,7 @@ h2 {
 .pricing__price {
   font-size: 22px;
 }
+
 .pricing__price > abbr {
   font-size: 18px;
   color: #a7a6a9;
@@ -92,19 +116,29 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
+
 .pricing__button > span {
   font-size: 18px;
   font-weight: 700;
   color: #3041C4;
 }
+
 .pricing__button:hover {
   background-color: #3041C4;
 }
+
 .pricing__button:hover span {
   color: #fff;
 }
@@ -123,10 +157,13 @@ h2 {
 .pricing__features-item {
   font-size: 18px;
 }
+
 .pricing__features-item:not(:last-child) {
   margin-bottom: 20px;
 }
+
 .pricing__features-item:before {
   content: url("img/check.svg");
   margin-right: 10px;
 }
+/*# sourceMappingURL=style.css.map */

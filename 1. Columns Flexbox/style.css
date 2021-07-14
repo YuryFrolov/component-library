@@ -15,7 +15,7 @@ img {
 }
 
 .pricing {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .pricing__title {
@@ -31,34 +31,53 @@ img {
 }
 
 .pricing__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 @media (min-width: 600px) {
   .pricing__list {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .pricing__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 350px;
   border: 1px solid #e6e6e6;
   border-radius: 10px;
   padding: 1.875em;
   /*     &--the-best {
-
-      } */
+        
+    } */
 }
+
 .pricing__item:hover {
   border-color: #ff8364;
 }
+
 .pricing__item:hover * {
+  -webkit-transition: 0.1s ease;
   transition: 0.1s ease;
 }
 
 .pricing__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 20px;
@@ -67,9 +86,16 @@ img {
 
 .pricing__plan-wrapper {
   margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pricing__plan {
@@ -84,7 +110,8 @@ img {
 }
 
 .pricing__image {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* .pricing__features-title {
@@ -99,12 +126,18 @@ img {
 
 .pricing__features-item {
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .pricing__features-item:last-child {
   margin-bottom: 0;
 }
+
 .pricing__features-item:before {
   content: url("star.svg");
   margin-right: 5px;
@@ -120,12 +153,18 @@ img {
   cursor: pointer;
   margin-top: auto;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .pricing__button:hover {
   background-color: #ff8364;
 }
+
 .pricing__button:hover p {
   color: #fff;
 }
@@ -140,13 +179,15 @@ img {
 
 .description {
   padding: 20px 40px;
-  font-family: "Consolas", sans-serif;
+  font-family: 'Consolas', sans-serif;
   font-weight: 700;
   font-size: 1.2em;
   margin-bottom: 15px;
   max-width: 600px;
 }
+
 .description li:not(:last-child) {
   list-style-type: decimal;
   margin-bottom: 15px;
 }
+/*# sourceMappingURL=style.css.map */

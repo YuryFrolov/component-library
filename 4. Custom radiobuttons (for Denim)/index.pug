@@ -1,0 +1,21 @@
+doctype html
+html(lang="en") 
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        //-fonts
+        link(rel="stylesheet" href="../normalize.css")
+        link(rel="stylesheet" href="../global.css")
+        link(rel="stylesheet" href="style.css")
+    body
+      label.check__label
+       input(type="checkbox", class="check__input" name="color")
+       span(class="check__box") Цвет
+      label.check__label
+       input(type="checkbox", class="check__input" name="color" checked)
+       span(class="check__box") Цвет
+      label.check__label
+       input(type="checkbox", class="check__input" name="color" disabled)
+       span(class="check__box") Цвет     
